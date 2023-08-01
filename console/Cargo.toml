@@ -4,8 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-path="src/main.rs"
-name="console"
+path="src/main.rs" 
+name="estudios"
+
+[[bin]]
+path="src/Programa#1.rs"
+name="programa1"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
