@@ -2,7 +2,6 @@
 ## Variables y constantes
   Las variables se declaran con la keyword "let" y para hacer una palabra mutable se utiliza "let mut" y para hacer constantes se usa la keyword "const" y estas variables pueden ser globales o locales ahora veremos como se usarian en codigo real:
 ---
-<code>
 
 ```rust
 const PI = 3.1415;
@@ -21,6 +20,7 @@ fn main() {
     const SALUDO = "hola";//ni lo intentes cambiar porque es una constante dara error si o si
 }
 ```
-
-</code>
----
+# Tipos de datos
+## Tipos escalares
+### Enteros
+![Imagen_de_enteros](public/imgs/Enteros.png)
