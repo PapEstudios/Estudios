@@ -33,48 +33,117 @@
     unit: El tipo () también llamado "unidad". Representa la falta de información.
     usize: El tipo de dato entero sin signo del tamaño del puntero.
 ## Modulos
-    assert_matchesExperimental: Un módulo inestable que contiene la macro inestable assert_matches.
+    assert_matchesExperimental: Módulo inestable que contiene la macro no estable "assert_matches".
     async_iterExperimental: Iteración asincrónica componible.
     intrinsicsExperimental: Intrínsecos del compilador.
     simdExperimental: Módulo SIMD portátil.
     alloc: APIs de asignación de memoria.
     any: Utilidades para tipificación dinámica o reflexión de tipos.
-    arch: Módulo de intrínsecos SIMD y de proveedores.
+    arch: Módulo de instrucciones SIMD y intrínsecos de proveedores.
     array: Utilidades para el tipo primitivo de arreglo.
     ascii: Operaciones en cadenas y caracteres ASCII.
     backtrace: Soporte para capturar una traza de pila de un hilo del sistema operativo.
     borrow: Un módulo para trabajar con datos prestados.
-    boxed: El tipo Box<T> para asignación de memoria en el montón.
-    cell: Contenedores compartibles y mutables.
+    boxed: El tipo Box<T> para asignación en el montón.
+    cell: Contenedores mutables compartibles.
     char: Utilidades para el tipo primitivo de carácter.
-    clone: El rasgo Clone para tipos que no pueden ser "copiados" implícitamente.
+    clone: El trazo Clone para tipos que no pueden ser "copiados implícitamente".
     cmp: Utilidades para comparar y ordenar valores.
     collections: Tipos de colección.
-    convert: Rasgos para conversiones entre tipos.
-    default: El rasgo Default para tipos con un valor predeterminado.
+    convert: Tratamientos para conversiones entre tipos.
+    default: El trazo Default para tipos con un valor predeterminado.
     env: Inspección y manipulación del entorno del proceso.
     error: Interfaces para trabajar con errores.
     f32: Constantes para el tipo de punto flotante de precisión simple f32.
     f64: Constantes para el tipo de punto flotante de doble precisión f64.
-    i8Deprecation: Módulo en desuso para el tipo primitivo i8.
-    i16Deprecation: Módulo en desuso para el tipo primitivo i16.
-    i32Deprecation: Módulo en desuso para el tipo primitivo i32.
-    i64Deprecation: Módulo en desuso para el tipo primitivo i64.
-    i128Deprecation: Módulo en desuso para el tipo primitivo i128.
-    isizeDeprecation: Módulo en desuso para el tipo primitivo isize.
-    u8Deprecation: Módulo en desuso para el tipo primitivo u8.
-    u16Deprecation: Módulo en desuso para el tipo primitivo u16.
-    u32Deprecation: Módulo en desuso para el tipo primitivo u32.
-    u64Deprecation: Módulo en desuso para el tipo primitivo u64.
-    u128Deprecation: Módulo en desuso para el tipo primitivo u128.
-    usizeDeprecation: Módulo en desuso para el tipo primitivo usize.
+    ffi: Utilidades relacionadas con enlaces FFI.
+    fmt: Utilidades para el formato y la impresión de cadenas.
+    fs: Operaciones de manipulación del sistema de archivos.
+    future: Funcionalidad básica asincrónica.
+    hash: Soporte genérico de hash.
+    hint: Indicaciones al compilador que afectan cómo se debe emitir u optimizar el código. Las indicaciones pueden ser en tiempo de compilación o en tiempo de ejecución.
+    i8Deprecation planned: Módulo de constantes redundantes para el tipo primitivo i8 (planeado).
+    i16Deprecation planned: Módulo de constantes redundantes para el tipo primitivo i16 (planeado).
+    i32Deprecation planned: Módulo de constantes redundantes para el tipo primitivo i32 (planeado).
+    i64Deprecation planned: Módulo de constantes redundantes para el tipo primitivo i64 (planeado).
+    i128Deprecation planned: Módulo de constantes redundantes para el tipo primitivo i128 (planeado).
+    io: Tratamientos, ayudantes y definiciones de tipos para la funcionalidad básica de E/S.
+    isizeDeprecation planned: Módulo de constantes redundantes para el tipo primitivo isize (planeado).
+    iter: Iteración externa componible.
+    marker: Tratos primitivos y tipos que representan propiedades básicas de tipos.
+    mem: Funciones básicas para tratar con memoria.
+    net: Primitivas de red para comunicación TCP/UDP.
+    num: Funcionalidad adicional para tipos numéricos.
+    ops: Operadores sobrecargables.
+    option: Valores opcionales.
+    os: Funcionalidad específica del sistema operativo.
+    panic: Soporte para pánicos en la biblioteca estándar.
+    path: Manipulación de rutas multiplataforma.
+    pin: Tipos que anclan datos a su ubicación en memoria.
+    prelude: El Preludio de Rust.
+    primitive: Este módulo reexporta los tipos primitivos para permitir su uso que no pueda ser oscurecido por otros tipos declarados.
+    process: Un módulo para trabajar con procesos.
+    ptr: Manejo manual de memoria a través de punteros en bruto.
+    rc: Punteros con recuento de referencias de un solo subproceso. 'Rc' significa 'Reference Counted'.
+    result: Manejo de errores con el tipo Result.
+    slice: Utilidades para el tipo primitivo de rebanada.
+    str: Utilidades para el tipo primitivo de cadena.
+    string: Una cadena UTF-8 codificada y ampliable.
+    sync: Primitivas de sincronización útiles.
+    task: Tipos y tratos para trabajar con tareas asincrónicas.
+    thread: Hilos nativos.
+    time: Cuantificación temporal.
+    u8Deprecation planned: Módulo de constantes redundantes para el tipo primitivo u8 (planeado).
+    u16Deprecation planned: Módulo de constantes redundantes para el tipo primitivo u16 (planeado).
+    u32Deprecation planned: Módulo de constantes redundantes para el tipo primitivo u32 (planeado).
+    u64Deprecation planned: Módulo de constantes redundantes para el tipo primitivo u64 (planeado).
+    u128Deprecation planned: Módulo de constantes redundantes para el tipo primitivo u128 (planeado).
+    usizeDeprecation planned: Módulo de constantes redundantes para el tipo primitivo usize (planeado).
+    vec: Un tipo de arreglo creciente y contiguo con contenidos asignados en el montón, escrito como Vec<T>.
 ## Macros
-    concat_bytesExperimental: Concatena literales en una matriz de bytes.
-    concat_identsExperimental: Concatena identificadores en un único identificador.
-    const_format_argsExperimental: Igual que format_args, pero se puede usar en algunos contextos constantes.
-    format_args_nlExperimental: Igual que format_args, pero agrega un salto de línea al final.
-    is_x86_feature_detectedx86: Una macro para probar en tiempo de ejecución si una característica de CPU está disponible en plataformas x86/x86-64.
-    tryDeprecated: Desenvuelve un resultado o propaga su error.
+    concat_bytesExperimental: Concatena literales en una secuencia de bytes.
+    concat_identsExperimental: Concatena identificadores en un solo identificador.
+    const_format_argsExperimental: Igual que format_args, pero puede ser utilizado en algunos contextos constantes.
+    format_args_nlExperimental: Igual que format_args, pero agrega una nueva línea al final.
+    log_syntaxExperimental: Imprime tokens pasados en la salida estándar.
+    trace_macrosExperimental: Habilita o deshabilita la funcionalidad de rastreo utilizada para depurar otras macros.
+    assert: Asegura que una expresión booleana sea verdadera en tiempo de ejecución.
+    assert_eq: Asegura que dos expresiones sean iguales entre sí (usando PartialEq).
+    assert_ne: Asegura que dos expresiones no sean iguales entre sí (usando PartialEq).
+    cfg: Evalúa combinaciones booleanas de indicadores de configuración en tiempo de compilación.
+    column: Se expande al número de columna en el que fue invocado.
+    compile_error: Causa que la compilación falle con el mensaje de error proporcionado cuando se encuentra.
+    concat: Concatena literales en una secuencia de caracteres estática.
+    dbg: Imprime y devuelve el valor de una expresión dada para depuración rápida y sucia.
+    debug_assert: Asegura que una expresión booleana sea verdadera en tiempo de ejecución.
+    debug_assert_eq: Asegura que dos expresiones sean iguales entre sí.
+    debug_assert_ne: Asegura que dos expresiones no sean iguales entre sí.
+    env: Inspecciona una variable de entorno en tiempo de compilación.
+    eprint: Imprime en la salida de error estándar.
+    eprintln: Imprime en la salida de error estándar, con una nueva línea.
+    file: Se expande al nombre del archivo en el que fue invocado.
+    format: Crea una cadena usando la interpolación de expresiones en tiempo de ejecución.
+    format_args: Construye parámetros para otras macros de formateo de cadenas.
+    include: Analiza un archivo como una expresión o un elemento según el contexto.
+    include_bytes: Incluye un archivo como una referencia a una matriz de bytes.
+    include_str: Incluye un archivo codificado en UTF-8 como una cadena.
+    is_x86_feature_detectedx86 o x86-64: Una macro para probar en tiempo de ejecución si una característica de CPU está disponible en plataformas x86/x86-64.
+    line: Se expande al número de línea en el que fue invocado.
+    matches: Devuelve si la expresión dada coincide con alguno de los patrones dados.
+    module_path: Se expande a una cadena que representa la ruta actual del módulo.
+    option_env: Inspecciona opcionalmente una variable de entorno en tiempo de compilación.
+    panic: Genera un pánico en el hilo actual.
+    print: Imprime en la salida estándar.
+    println: Imprime en la salida estándar, con una nueva línea.
+    stringify: Convierte sus argumentos en cadenas.
+    thread_local: Declara una nueva clave de almacenamiento local en el hilo del tipo std::thread::LocalKey.
+    todo: Indica código incompleto.
+    tryDeprecated: Desempaqueta un resultado o propaga su error.
+    unimplemented: Indica código no implementado generando un pánico con el mensaje "no implementado".
+    unreachable: Indica código inalcanzable.
+    vec: Crea un Vec que contiene los argumentos.
+    write: Escribe datos formateados en un búfer.
+    writeln: Escribe datos formateados en un búfer, con una nueva línea agregada.
 ## Palabras clave
     SelfTy: El tipo que implementa dentro de un bloque de trazo (trait o impl), o el tipo actual dentro de una definición de tipo.
     as: Realiza una conversión entre tipos o cambia el nombre de una importación.
