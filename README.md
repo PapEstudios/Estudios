@@ -5,6 +5,109 @@
 [Youtube2](https://www.youtube.com/playlist?list=PL1GmZplwRjmNIdo_G2-Jl9mGEsDNHcOPe)
 [Youtube3](https://www.youtube.com/playlist?list=PLQFivIgaGdhzNWYGlT3Rybq9EG5ZvYCR-)
 [Youtube4](https://www.youtube.com/watch?v=birgJIuIerk&list=PLQFivIgaGdhzNWYGlT3Rybq9EG5ZvYCR-)
+# Biblioteca std o standard de rust
+## Tipos Primitivos:
+    never: Un tipo experimental llamado "never". Es un tipo que no tiene valores válidos. Se utiliza para indicar que una expresión nunca terminará o nunca producirá un valor.
+    array: Un arreglo de tamaño fijo, denotado como [T; N], donde T es el tipo de los elementos y N es el tamaño constante no negativo.
+    bool: El tipo booleano, que puede ser verdadero (true) o falso (false).
+    char: Un tipo de dato que representa un único carácter Unicode.
+    f32: Un tipo de punto flotante de 32 bits, específicamente el tipo "binary32" definido en IEEE 754-2008.
+    f64: Un tipo de punto flotante de 64 bits, específicamente el tipo "binary64" definido en IEEE 754-2008.
+    fn: Punteros a funciones, como fn(usize) -> bool.
+    i8: El tipo de dato entero con signo de 8 bits.
+    i16: El tipo de dato entero con signo de 16 bits.
+    i32: El tipo de dato entero con signo de 32 bits.
+    i64: El tipo de dato entero con signo de 64 bits.
+    i128: El tipo de dato entero con signo de 128 bits.
+    isize: El tipo de dato entero con signo del tamaño del puntero.
+    pointer: Punteros crudos y no seguros, *const T y *mut T.
+    reference: Referencias, &T y &mut T.
+    slice: Una vista de tamaño dinámico en una secuencia contigua, [T]. "Contigua" significa que los elementos están dispuestos de manera que cada elemento tiene la misma distancia de sus vecinos.
+    str: Segmentos de cadena.
+    tuple: Una secuencia finita y heterogénea, (T, U, ...).
+    u8: El tipo de dato entero sin signo de 8 bits.
+    u16: El tipo de dato entero sin signo de 16 bits.
+    u32: El tipo de dato entero sin signo de 32 bits.
+    u64: El tipo de dato entero sin signo de 64 bits.
+    u128: El tipo de dato entero sin signo de 128 bits.
+    unit: El tipo () también llamado "unidad". Representa la falta de información.
+    usize: El tipo de dato entero sin signo del tamaño del puntero.
+## Modulos
+    assert_matchesExperimental: Un módulo inestable que contiene la macro inestable assert_matches.
+    async_iterExperimental: Iteración asincrónica componible.
+    intrinsicsExperimental: Intrínsecos del compilador.
+    simdExperimental: Módulo SIMD portátil.
+    alloc: APIs de asignación de memoria.
+    any: Utilidades para tipificación dinámica o reflexión de tipos.
+    arch: Módulo de intrínsecos SIMD y de proveedores.
+    array: Utilidades para el tipo primitivo de arreglo.
+    ascii: Operaciones en cadenas y caracteres ASCII.
+    backtrace: Soporte para capturar una traza de pila de un hilo del sistema operativo.
+    borrow: Un módulo para trabajar con datos prestados.
+    boxed: El tipo Box<T> para asignación de memoria en el montón.
+    cell: Contenedores compartibles y mutables.
+    char: Utilidades para el tipo primitivo de carácter.
+    clone: El rasgo Clone para tipos que no pueden ser "copiados" implícitamente.
+    cmp: Utilidades para comparar y ordenar valores.
+    collections: Tipos de colección.
+    convert: Rasgos para conversiones entre tipos.
+    default: El rasgo Default para tipos con un valor predeterminado.
+    env: Inspección y manipulación del entorno del proceso.
+    error: Interfaces para trabajar con errores.
+    f32: Constantes para el tipo de punto flotante de precisión simple f32.
+    f64: Constantes para el tipo de punto flotante de doble precisión f64.
+    i8Deprecation: Módulo en desuso para el tipo primitivo i8.
+    i16Deprecation: Módulo en desuso para el tipo primitivo i16.
+    i32Deprecation: Módulo en desuso para el tipo primitivo i32.
+    i64Deprecation: Módulo en desuso para el tipo primitivo i64.
+    i128Deprecation: Módulo en desuso para el tipo primitivo i128.
+    isizeDeprecation: Módulo en desuso para el tipo primitivo isize.
+    u8Deprecation: Módulo en desuso para el tipo primitivo u8.
+    u16Deprecation: Módulo en desuso para el tipo primitivo u16.
+    u32Deprecation: Módulo en desuso para el tipo primitivo u32.
+    u64Deprecation: Módulo en desuso para el tipo primitivo u64.
+    u128Deprecation: Módulo en desuso para el tipo primitivo u128.
+    usizeDeprecation: Módulo en desuso para el tipo primitivo usize.
+## Macros
+    concat_bytesExperimental: Concatena literales en una matriz de bytes.
+    concat_identsExperimental: Concatena identificadores en un único identificador.
+    const_format_argsExperimental: Igual que format_args, pero se puede usar en algunos contextos constantes.
+    format_args_nlExperimental: Igual que format_args, pero agrega un salto de línea al final.
+    is_x86_feature_detectedx86: Una macro para probar en tiempo de ejecución si una característica de CPU está disponible en plataformas x86/x86-64.
+    tryDeprecated: Desenvuelve un resultado o propaga su error.
+## Palabras clave
+    SelfTy: El tipo que implementa dentro de un bloque de trazo (trait o impl), o el tipo actual dentro de una definición de tipo.
+    as: Realiza una conversión entre tipos o cambia el nombre de una importación.
+    async: Devuelve un Futuro en lugar de bloquear el hilo actual.
+    await: Suspende la ejecución hasta que el resultado de un Futuro esté listo.
+    dyn: Prefijo de un tipo de objeto trazo.
+    else: Qué expresión evaluar cuando una condición if es falsa.
+    enum: Un tipo que puede ser uno de varios valores.
+    extern: Enlaza o importa código externo.
+    for: Iteración con in, implementación de trazo con impl, o límites de trazo de rango superior (para <'a>).
+    if: Evalúa un bloque si una condición es verdadera.
+    impl: Implementa alguna funcionalidad para un tipo.
+    in: Itera sobre una serie de valores con for.
+    let: Asigna un valor a una variable.
+    loop: Bucle indefinido.
+    match: Control de flujo basado en coincidencia de patrones.
+    mod: Organiza el código en módulos.
+    move: Captura el entorno de un cierre por valor.
+    mut: Una variable, referencia o puntero mutable.
+    pub: Hace que un elemento sea visible para otros.
+    ref: Se enlaza por referencia durante la coincidencia de patrones.
+    return: Devuelve un valor desde una función.
+    self: El receptor de un método o el módulo actual.
+    static: Un elemento estático es un valor válido durante toda la duración del programa (una duración 'estática').
+    struct: Un tipo que se compone de otros tipos.
+    super: El padre del módulo actual.
+    trait: Una interfaz común para un grupo de tipos.
+    type: Define un alias para un tipo existente.
+    union: El equivalente en Rust de unión al estilo C.
+    unsafe: Código o interfaces cuya seguridad de memoria no puede ser verificada por el sistema de tipos.
+    use: Importa o renombra elementos de otras cajas o módulos.
+    where: Agrega restricciones que deben cumplirse para usar un elemento.
+    while: Bucle mientras se cumple una condición.
 # Variables y constantes
     Las variables se declaran con la keyword "let" y para hacer una palabra mutable se utiliza "let mut" y para hacer constantes se usa la keyword "const" y estas variables pueden ser globales o locales ahora veremos como se usarian en codigo real:
 ---
