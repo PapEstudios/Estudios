@@ -12,8 +12,8 @@ path="src/Programa#1.rs"
 name="programa1"
 
 [[bin]]
-path="src/GuessingGame.rs"
-name="simplegame"
+path="src/Guessing_Game.rs"
+name="game"
 
 [[bin]]
 path="src/Programa#2.rs"
@@ -22,3 +22,4 @@ name="calculator"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8.5"
