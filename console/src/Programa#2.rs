@@ -1,5 +1,4 @@
 use std::io;
-
 fn main() {
     let mut select_operation = String::new();
     io::stdin().read_line(&mut select_operation).expect("Error al leer la operación");
