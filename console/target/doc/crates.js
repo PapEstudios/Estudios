@@ -1,1 +1,0 @@
-window.ALL_CRATES = ["calculator","cfg_if","estudios","game","getrandom","libc","ppv_lite86","programa1","rand","rand_chacha","rand_core"];

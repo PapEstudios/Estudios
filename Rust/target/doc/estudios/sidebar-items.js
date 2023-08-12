@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["main","my_function"],"struct":["MyStruct"]};
