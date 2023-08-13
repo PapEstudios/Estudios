@@ -39,4 +39,5 @@ name="variables"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+gtk = { version = "0.7.2", package = "gtk4", features = ["v4_8"] }
 rand = "0.8.5"
