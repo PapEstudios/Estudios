@@ -1,1 +1,1 @@
-/workspaces/RustProgramacion/console/target/debug/variables: /workspaces/RustProgramacion/console/src/Variables.rs
+/home/pap/Dev/Estudios/Important/Rust/target/debug/variables: /home/pap/Dev/Estudios/Important/Rust/src/rust_oficial_book/#2_Variables.rs
