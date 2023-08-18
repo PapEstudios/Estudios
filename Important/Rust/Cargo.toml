@@ -27,11 +27,11 @@ name="promedios"
 #-------------------------------------------------------------------------------
 #rust_oficial_book
 [[bin]]
-path="src/rust_oficial_book/Guessing_Game.rs"
+path="src/rust_oficial_book/#1_Guessing_Game.rs"
 name="game"
 
 [[bin]]
-path="src/rust_oficial_book/Variables.rs"
+path="src/rust_oficial_book/#2_Variables.rs"
 name="variables"
 #-------------------------------------------------------------------------------
 

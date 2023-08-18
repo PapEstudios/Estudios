@@ -7,7 +7,7 @@ numero_entero = 42;
 puts numero_entero
 numero_flotante = 3.14159
 puts numero_flotante
-String (Cadena): Representa texto. Puede definirse usando comillas simples o dobles. Ejemplo: 'Hola, mundo', "Ruby es genial".
+string = "Representa texto"dobles. Ejemplo: 'Hola, mundo', "Ruby es genial".
 
 Symbol (Símbolo): Representa nombres inmutables utilizados como identificadores. Ejemplo: :nombre, :edad.
 
