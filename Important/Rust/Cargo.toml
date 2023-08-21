@@ -37,6 +37,14 @@ name="variables"
 [[bin]]
 path="src/rust_oficial_book/#3_Data_Types.rs"
 name="datatypes"
+
+[[bin]]
+path="src/rust_oficial_book/#4_Funciones.rs"
+name="funciones"
+
+[[bin]]
+path="src/rust_oficial_book/#5_control_flow.rs"
+name="controldeflujo"
 #-------------------------------------------------------------------------------
 
 
