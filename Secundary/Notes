@@ -1,1 +1,20 @@
 
+<html>
+
+<head>
+
+<title>
+
+PAGINA CON FRAMES
+
+</title> </head>
+
+<frameset rows = "20%, 40%, 40%"> <frame name="f1" src = "pag01.html"> <frameset cols="40%, 60%">
+
+<frame name="f2" src = "pag02.html"> <frameset rows = "59%, 50%">
+
+ange"> <frame name="f3" src="pag03.html"> <frame name="f4" src = "pag04.html">
+
+UNID</frameset>
+
+</frameset>
